@@ -9,7 +9,7 @@
   <body>
 
     <nav>
-      <ul>
+      <ul id="navbar" class="navbar">
         <li><a href="#">HOME</a></li>
         <li><a href="#">CONSULT</a></li>
         <li><a href="#">IMPLEMENT</a></li>
@@ -17,7 +17,9 @@
         <li><a href="#">ABOUT</a></li>
         <li id="contactLink"><a href="#">CONTACT</a></li>
       </ul>
+
       <i class="fa fa-bars" aria-hidden="true" onclick="showNav()"></i>
+
     </nav>
 
     <div id="headerServiceWrapper">
@@ -63,7 +65,14 @@
     </div>
 
     <script>
-      // showNav function
+      function showNav() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className == "navbar") {
+          navbar.className += " responsive";
+        } else {
+          navbar.className += "navbar";
+        }
+      }
     </script>
   </body>
 </html>

@@ -17,17 +17,6 @@ nav {
     font-size: 3em;
     float: right;
     display: none;
-    margin-right: 10%;
-
-    @media (min-width: $mobile-size) {
-      display: block;
-    }
-    @media (min-width: $tablet-size) {
-      display: block;
-    }
-    @media (min-width: $desktop-size) {
-      display: none;
-    }
 
     &:hover {
       cursor: pointer;
@@ -37,23 +26,9 @@ nav {
 
   ul {
     float: right;
-    margin-right: 14%;
-
-    @media (min-width: $mobile-size) {
-      display: none;
-    }
-    @media (min-width: $tablet-size) {
-      display: none;
-    }
-    @media (min-width: $desktop-size) {
-      display: inline-block;
-    }
 
     li{
-      display: inline-block;
       padding: 10px 20px;
-
-
 
       a {
         color: #000000;
@@ -77,22 +52,6 @@ nav {
   header {
     @include grid-container;
     background: url('../assets/logo.svg');
-    @media (min-width: $mobile-size) {
-      background-size: 300px;
-      background-repeat: no-repeat;
-      background-position: 100% 66%;
-    }
-    @media (min-width: $tablet-size) {
-      background-size: 400px;
-      background-repeat: no-repeat;
-      background-position: 100% 75%;
-    }
-    @media (min-width: $desktop-size) {
-      background-size: auto;
-      background-repeat: no-repeat;
-      background-position: right bottom;
-    }
-
 
     #introContainer {
       @include grid-column(12, $mobile-intro-cont-grid);
@@ -200,4 +159,71 @@ nav {
     }
   }
 
+}
+
+
+@media (min-width: $mobile-size) {
+  #headerServiceWrapper {
+    header {
+      background-size: 300px;
+      background-repeat: no-repeat;
+      background-position: 100% 66%;
+    }
+  }
+
+  nav {
+    i.fa {
+      display: block;
+    }
+    ul {
+      margin-right: 5%;
+      li {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-size) {
+  #headerServiceWrapper {
+    header {
+      background-size: 400px;
+      background-repeat: no-repeat;
+      background-position: 100% 75%;
+    }
+  }
+
+  nav {
+    i.fa {
+      display: block;
+    }
+    ul {
+      margin-right: 10%;
+      li {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  #headerServiceWrapper {
+    header {
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+  }
+
+  nav {
+    i.fa {
+      display: none;
+    }
+    ul {
+      margin-right: 14%;
+      li {
+        display: inline-block;
+      }
+    }
+  }
 }
