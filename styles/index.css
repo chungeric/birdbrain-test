@@ -93,13 +93,13 @@ nav {
           font-weight: 400;
           letter-spacing: 1px;
           font-size: 0.9em;
-          color: #828282; }
+          color: #707071; }
   #headerServiceWrapper #services {
     background: #0b4e70;
     clip-path: polygon(0 0, 100% 150px, 100% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 100% 150px, 100% 100%, 0% 100%);
     position: absolute;
-    top: 330px; }
+    top: 345px; }
     #headerServiceWrapper #services::after {
       clear: both;
       content: "";
@@ -162,8 +162,6 @@ nav {
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: 100% 60%; }
-    #headerServiceWrapper header #introContainer #intro {
-      margin-bottom: 430px; }
 
   nav {
     margin-bottom: 0; }
@@ -184,9 +182,7 @@ nav {
   #headerServiceWrapper header {
     background-size: 400px;
     background-repeat: no-repeat;
-    background-position: 100% 75%; }
-    #headerServiceWrapper header #introContainer #intro {
-      margin-bottom: 400px; }
+    background-position: 100% 82%; }
 
   nav {
     margin-bottom: 0; }
@@ -208,8 +204,6 @@ nav {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: right bottom; }
-    #headerServiceWrapper header #introContainer #intro {
-      margin-bottom: 400px; }
 
   nav {
     margin-bottom: 50px; }

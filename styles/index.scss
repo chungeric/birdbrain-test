@@ -97,7 +97,7 @@ nav {
           font-weight: 400;
           letter-spacing: 1px;
           font-size: 0.9em;
-          color: #828282;
+          color: #707071;
         }
       }
     }
@@ -109,7 +109,7 @@ nav {
     clip-path: polygon(0 0, 100% 150px, 100% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 100% 150px, 100% 100%, 0% 100%);
     position: absolute;
-    top: 330px;
+    top: 345px;
 
 
     #servicesContainer {
@@ -175,9 +175,6 @@ nav {
       background-size: 300px;
       background-repeat: no-repeat;
       background-position: 100% 60%;
-      #introContainer #intro {
-        margin-bottom: 430px;
-      }
     }
   }
 
@@ -213,10 +210,7 @@ nav {
     header {
       background-size: 400px;
       background-repeat: no-repeat;
-      background-position: 100% 75%;
-      #introContainer #intro {
-        margin-bottom: 400px;
-      }
+      background-position: 100% 82%;
     }
   }
 
@@ -253,9 +247,6 @@ nav {
       background-size: auto;
       background-repeat: no-repeat;
       background-position: right bottom;
-      #introContainer #intro {
-        margin-bottom: 400px;
-      }
     }
   }
 
