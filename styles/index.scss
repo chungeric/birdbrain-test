@@ -97,7 +97,7 @@ nav {
           font-weight: 400;
           letter-spacing: 1px;
           font-size: 0.9em;
-          color: #707071;
+          color: #828282;
         }
       }
     }
@@ -174,12 +174,15 @@ nav {
     header {
       background-size: 300px;
       background-repeat: no-repeat;
-      background-position: 100% 66%;
+      background-position: 100% 60%;
+      #introContainer #intro {
+        margin-bottom: 430px;
+      }
     }
   }
 
   nav {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     #hamburgerContainer {
       i.fa-bars {
         display: block;
@@ -211,6 +214,9 @@ nav {
       background-size: 400px;
       background-repeat: no-repeat;
       background-position: 100% 75%;
+      #introContainer #intro {
+        margin-bottom: 400px;
+      }
     }
   }
 
@@ -247,6 +253,9 @@ nav {
       background-size: auto;
       background-repeat: no-repeat;
       background-position: right bottom;
+      #introContainer #intro {
+        margin-bottom: 400px;
+      }
     }
   }
 
