@@ -8,18 +8,18 @@
   </head>
   <body>
 
-    <nav>
-      <ul id="navbar" class="navbar">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">CONSULT</a></li>
-        <li><a href="#">IMPLEMENT</a></li>
-        <li><a href="#">MANAGE</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li id="contactLink"><a href="#">CONTACT</a></li>
+    <nav id="navbar" class="navbar">
+      <div id="hamburgerContainer">
+        <i class="fa fa-bars" aria-hidden="true" onclick="showNav()"></i>
+      </div>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#consult">CONSULT</a></li>
+        <li><a href="#implement">IMPLEMENT</a></li>
+        <li><a href="#manage">MANAGE</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li id="contactLink"><a href="#contact">CONTACT</a></li>
       </ul>
-
-      <i class="fa fa-bars" aria-hidden="true" onclick="showNav()"></i>
-
     </nav>
 
     <div id="headerServiceWrapper">
@@ -66,11 +66,11 @@
 
     <script>
       function showNav() {
-        var navbar = document.getElementById("navbar");
-        if (navbar.className == "navbar") {
-          navbar.className += " responsive";
+        var nav = document.getElementById("navbar");
+        if (nav.className == "navbar") {
+          nav.className += " responsive";
         } else {
-          navbar.className += "navbar";
+          nav.className = "navbar";
         }
       }
     </script>

@@ -13,26 +13,31 @@ nav {
   font-size: 0.8em;
   font-weight: 300;
 
-  i.fa {
-    font-size: 3em;
-    float: right;
-    display: none;
-
-    &:hover {
-      cursor: pointer;
+  #hamburgerContainer {
+    @include clearfix;
+    i.fa-bars {
+      display: none;
+      font-size: 3em;
+      margin-right: 14%;
+      float: right;
+      &:hover {
+        cursor: pointer;
+      }
     }
-
   }
 
   ul {
     float: right;
-
+    list-style-type: none;
+    padding: 0;
+    margin-right: 14%;
     li{
-      padding: 10px 20px;
-
+      display: inline-block;
       a {
         color: #000000;
         text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
       }
     }
 
@@ -146,6 +151,7 @@ nav {
         a {
           color: #75c372;
           font-weight: 500;
+          font-size: 0.9em;
         }
       }
     }
@@ -172,13 +178,27 @@ nav {
   }
 
   nav {
-    i.fa {
-      display: block;
+    margin-bottom: 20px;
+    #hamburgerContainer {
+      i.fa-bars {
+        display: block;
+      }
     }
+    ul li {
+      display: none;
+    }
+  }
+
+  nav.responsive {
     ul {
-      margin-right: 5%;
+      float: none;
+      margin: 0 auto;
       li {
-        display: none;
+        display: block;
+        text-align: center;
+        a {
+          display: block;
+        }
       }
     }
   }
@@ -194,13 +214,27 @@ nav {
   }
 
   nav {
-    i.fa {
-      display: block;
+    margin-bottom: 0;
+    #hamburgerContainer {
+      i.fa-bars {
+        display: block;
+      }
     }
+    ul li {
+      display: none;
+    }
+  }
+
+  nav.responsive {
     ul {
-      margin-right: 10%;
+      float: none;
+      margin: 0 auto;
       li {
-        display: none;
+        display: block;
+        text-align: center;
+        a {
+          display: block;
+        }
       }
     }
   }
@@ -216,11 +250,27 @@ nav {
   }
 
   nav {
-    i.fa {
-      display: none;
+    margin-bottom: 50px;
+  }
+
+  nav.responsive {
+    ul {
+      float: right;
+      margin-right: 14%;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  nav.navbar {
+    #hamburgerContainer {
+      i.fa-bars {
+        display: none;
+      }
     }
     ul {
-      margin-right: 14%;
+      float: right;
       li {
         display: inline-block;
       }
