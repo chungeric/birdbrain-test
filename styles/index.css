@@ -99,7 +99,7 @@ nav {
     clip-path: polygon(0 0, 100% 150px, 100% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 100% 150px, 100% 100%, 0% 100%);
     position: absolute;
-    top: 345px; }
+    top: 330px; }
     #headerServiceWrapper #services::after {
       clear: both;
       content: "";
@@ -161,7 +161,13 @@ nav {
   #headerServiceWrapper header {
     background-size: 300px;
     background-repeat: no-repeat;
-    background-position: 100% 60%; }
+    background-position: 100% 280px; }
+    #headerServiceWrapper header #introContainer #intro h1 {
+      font-size: 2.2em; }
+    #headerServiceWrapper header #introContainer #intro h4 {
+      font-size: 0.8em; }
+  #headerServiceWrapper #services {
+    top: 350px; }
 
   nav {
     margin-bottom: 0; }
@@ -183,6 +189,12 @@ nav {
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: 100% 82%; }
+    #headerServiceWrapper header #introContainer #intro h1 {
+      font-size: 2.5em; }
+    #headerServiceWrapper header #introContainer #intro h4 {
+      font-size: 0.9em; }
+  #headerServiceWrapper #services {
+    top: 330px; }
 
   nav {
     margin-bottom: 0; }
@@ -201,9 +213,15 @@ nav {
         display: block; } }
 @media (min-width: 1008px) {
   #headerServiceWrapper header {
-    background-size: auto;
+    background-size: 600px;
     background-repeat: no-repeat;
     background-position: right bottom; }
+    #headerServiceWrapper header #introContainer #intro h1 {
+      font-size: 2.5em; }
+    #headerServiceWrapper header #introContainer #intro h4 {
+      font-size: 0.9em; }
+  #headerServiceWrapper #services {
+    top: 330px; }
 
   nav {
     margin-bottom: 50px; }
