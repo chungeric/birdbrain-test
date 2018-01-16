@@ -1,0 +1,93 @@
+$mobile-size: 320px;
+$tablet-size: 641px;
+$desktop-size: 1008px;
+
+
+// GRID VARIABLES FOR SERVICES
+
+$mobile-service-grid: (
+  columns: 12,
+  media: $mobile-size,
+  direction: ltr,
+);
+
+$tablet-service-grid: (
+  columns: 12,
+  media: $tablet-size,
+  direction: ltr,
+);
+
+$desktop-service-grid: (
+  columns: 12,
+  gutter: 100px,
+  media: $desktop-size,
+  direction: ltr,
+);
+
+// GRID VARIABLES FOR SERVICES CONTAINER
+
+$mobile-services-grid: (
+  columns: 12,
+  media: $mobile-size,
+  direction: ltr,
+);
+
+$tablet-services-grid: (
+  columns: 12,
+  media: $tablet-size,
+  direction: ltr,
+);
+
+$desktop-services-grid: (
+  columns: 12,
+  gutter: 150px,
+  media: $desktop-size,
+  direction: ltr,
+);
+
+
+// GRID VARIABLES FOR HEADER
+
+$mobile-intro-cont-grid: (
+  columns: 12,
+  gutter: 20px,
+  media: $mobile-size,
+  direction: ltr,
+);
+
+$tablet-intro-cont-grid: (
+  columns: 12,
+  media: $tablet-size,
+  gutter: 8%,
+  direction: ltr,
+);
+
+$desktop-intro-cont-grid: (
+  columns: 12,
+  media: $desktop-size,
+  gutter: 14%,
+  direction: ltr,
+);
+
+
+// GRID VARIABLES FOR HEADER INTRO
+
+$mobile-intro-grid: (
+  columns: 12,
+  gutter: 20px,
+  media: $mobile-size,
+  direction: ltr,
+);
+
+$tablet-intro-grid: (
+  columns: 12,
+  media: $tablet-size,
+  gutter: 50px,
+  direction: ltr,
+);
+
+$desktop-intro-grid: (
+  columns: 12,
+  media: $desktop-size,
+  direction: ltr,
+);

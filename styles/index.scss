@@ -1,4 +1,5 @@
 @import '0-plugins/plugins-dir';
+@import '1-variables/grid-variables';
 
 body {
   font-family: $font-stack-helvetica;
@@ -32,44 +33,66 @@ nav {
   }
 }
 
-$services-grid: (
-  columns: 1,
-  gutter: 100px,
-  direction: ltr,
-);
-
-$service-grid: (
-  columns: 12,
-  gutter: 150px,
-  direction: ltr,
-);
-
 #headerServiceWrapper {
   position: relative;
 
   header {
     @include grid-container;
     background: url('../assets/logo.svg');
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    #intro {
-      @include grid-column(5);
-      margin-left: 14%;
-      margin-bottom: 400px;
-      margin-top: 40px;
-
-      h1 {
-        font-weight: 300;
-        letter-spacing: 2px;
-        font-size: 2.5em;
-        padding: 0;
-        margin: 0;
+    @media (min-width: $mobile-size) {
+      background-size: 300px;
+      background-repeat: no-repeat;
+      background-position: 100% 66%;
+    }
+    @media (min-width: $tablet-size) {
+      background-size: 400px;
+      background-repeat: no-repeat;
+      background-position: 100% 75%;
+    }
+    @media (min-width: $desktop-size) {
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+    #introContainer {
+      @include grid-column(12, $mobile-intro-cont-grid);
+      @include grid-media($tablet-intro-cont-grid) {
+        @include grid-column(12);
       }
-      h4 {
-        font-weight: 400;
-        letter-spacing: 1px;
-        font-size: 0.9em;
-        color: #777777;
+      @include grid-media($desktop-intro-cont-grid) {
+        @include grid-column(12);
+      }
+
+      #intro {
+        @include grid-media($mobile-intro-grid) {
+          @include grid-column(12);
+          text-align: center;
+        }
+        @include grid-media($tablet-intro-grid) {
+          @include grid-column(12);
+          text-align: left;
+        }
+        @include grid-media($desktop-intro-grid) {
+          @include grid-column(12);
+          text-align: left;
+        }
+        margin-bottom: 400px;
+        margin-top: 40px;
+
+        h1 {
+          font-weight: 300;
+          letter-spacing: 2px;
+          font-size: 2.5em;
+          padding: 0;
+          margin: 0;
+          color: #212733;
+        }
+        h4 {
+          font-weight: 400;
+          letter-spacing: 1px;
+          font-size: 0.9em;
+          color: #707071;
+        }
       }
     }
   }
@@ -80,20 +103,46 @@ $service-grid: (
     clip-path: polygon(0 0, 100% 150px, 100% 100%, 0% 100%);
     position: absolute;
     top: 330px;
+
     #servicesContainer {
-      @include grid-column(1, $services-grid);
-      padding-bottom: 140px;
+      @include grid-column(12, $mobile-services-grid);
+      @include grid-media($tablet-services-grid){
+         @include grid-column(12);
+      }
+      @include grid-media($desktop-services-grid){
+         @include grid-column(12);
+      }
+
+      padding-bottom: 170px;
       padding-top: 200px;
+
       .service {
+        @include grid-media($mobile-service-grid) {
+          @include grid-column(12);
+          margin-bottom: 80px;
+        }
+        @include grid-media($tablet-service-grid){
+           @include grid-column(4);
+           margin-bottom: 0;
+        }
+        @include grid-media($desktop-service-grid){
+           @include grid-column(4);
+           margin-bottom: 0;
+        }
+
         color: #ffffff;
-        @include grid-column(4, $service-grid);
         text-align: center;
 
+        h3 {
+          font-weight: 300;
+          letter-spacing: 1px;
+        }
         i.fa {
           font-size: 3em;
         }
         a {
           color: #75c372;
+          font-weight: 500;
         }
       }
     }
