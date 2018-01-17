@@ -70,7 +70,7 @@ nav {
 
 #headerServiceWrapper {
   position: relative;
-
+  width: 100%;
 
   header {
     @include grid-container;
@@ -152,10 +152,10 @@ nav {
     #servicesContainer {
       @include grid-column(12, $mobile-services-grid);
       @include grid-media($tablet-services-grid){
-         @include grid-column(12);
+        @include grid-column(12);
       }
       @include grid-media($desktop-services-grid){
-         @include grid-column(12);
+        @include grid-column(12);
       }
 
       padding-bottom: 170px;
@@ -168,12 +168,12 @@ nav {
           margin-bottom: 80px;
         }
         @include grid-media($tablet-service-grid){
-           @include grid-column(4);
-           margin-bottom: 0;
+          @include grid-column(4);
+          margin-bottom: 0;
         }
         @include grid-media($desktop-service-grid){
-           @include grid-column(4);
-           margin-bottom: 0;
+          @include grid-column(4);
+          margin-bottom: 0;
         }
 
         color: #ffffff;

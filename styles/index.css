@@ -47,7 +47,8 @@ nav {
           background: #373d47; }
 
 #headerServiceWrapper {
-  position: relative; }
+  position: relative;
+  width: 100%; }
   #headerServiceWrapper header {
     background: url("../assets/logo.svg"); }
     #headerServiceWrapper header::after {
@@ -133,9 +134,9 @@ nav {
           margin-left: 20px; } }
       @media only screen and (min-width: 1008px) {
         #headerServiceWrapper #services #servicesContainer {
-          width: calc(100% - 300px);
+          width: calc(100% - 200px);
           float: left;
-          margin-left: 150px; } }
+          margin-left: 100px; } }
       #headerServiceWrapper #services #servicesContainer .service {
         color: #ffffff;
         text-align: center; }
