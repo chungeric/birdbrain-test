@@ -212,7 +212,12 @@ nav {
 }
 
 
-/// MEDIA QUERIES (RESPONSIVE) ///
+
+
+//*** MEDIA QUERIES ***//
+
+
+//*** MOBILE SCREEN SIZE MEDIA QUERIES ***//
 
 @media (min-width: $mobile-size) {
   #headerServiceWrapper {
@@ -261,6 +266,9 @@ nav {
   }
 }
 
+
+//*** TABLET SCREEN SIZE MEDIA QUERIES ***//
+
 @media (min-width: $tablet-size) {
   #headerServiceWrapper {
     header {
@@ -307,6 +315,9 @@ nav {
     }
   }
 }
+
+
+//*** DESKTOP SCREEN SIZE MEDIA QUERIES ***//
 
 @media (min-width: $desktop-size) {
   #headerServiceWrapper {
