@@ -1,5 +1,6 @@
 @import '0-plugins/plugins-dir';
-@import '1-variables/grid-variables';
+@import '1-helpers/grid-variables';
+
 
 body {
   font-family: $font-stack-helvetica;
@@ -13,13 +14,18 @@ nav {
   font-size: 0.8em;
   font-weight: 300;
 
+
   #hamburgerContainer {
     @include clearfix;
+
+
     i.fa-bars {
       display: none;
       font-size: 3em;
       margin-right: 14%;
       float: right;
+
+
       &:hover {
         cursor: pointer;
       }
@@ -31,6 +37,8 @@ nav {
     list-style-type: none;
     padding: 0;
     margin-right: 14%;
+
+
     li{
       display: inline-block;
       a {
@@ -38,13 +46,23 @@ nav {
         text-decoration: none;
         padding: 10px 20px;
         display: inline-block;
+        transition: 0.3s ease;
+
+        &:hover {
+          background: #75c372;
+          color: #ffffff;
+          text-decoration: none;
+        }
       }
     }
-
     li#contactLink {
       background: #212733;
       a {
         color: #ffffff;
+
+        &:hover {
+          background: tint(#212733, 10%);
+        }
       }
     }
   }
@@ -57,6 +75,7 @@ nav {
   header {
     @include grid-container;
     background: url('../assets/logo.svg');
+
 
     #introContainer {
       @include grid-column(12, $mobile-intro-cont-grid);
@@ -86,7 +105,6 @@ nav {
         position: relative;
 
 
-
         h1 {
           font-weight: 300;
           letter-spacing: 2px;
@@ -101,7 +119,6 @@ nav {
           font-size: 0.9em;
           color: #707071;
         }
-
         #carousel-intro  {
           .carousel-inner .item {
             padding-bottom: 80px;
@@ -162,6 +179,7 @@ nav {
         color: #ffffff;
         text-align: center;
 
+
         h3 {
           font-weight: 300;
           letter-spacing: 1px;
@@ -171,8 +189,13 @@ nav {
         }
         a {
           color: #75c372;
+          text-decoration: underline;
           font-weight: 500;
           font-size: 0.9em;
+
+          &:hover {
+            color: tint(#75c372, 20%);
+          }
         }
       }
     }
@@ -188,6 +211,8 @@ nav {
 
 }
 
+
+/// MEDIA QUERIES (RESPONSIVE) ///
 
 @media (min-width: $mobile-size) {
   #headerServiceWrapper {
@@ -235,11 +260,6 @@ nav {
     }
   }
 }
-
-
-
-
-
 
 @media (min-width: $tablet-size) {
   #headerServiceWrapper {
