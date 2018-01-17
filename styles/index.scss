@@ -68,7 +68,7 @@ nav {
       }
 
 
-      #intro {
+      .intro {
         @include grid-media($mobile-intro-grid) {
           @include grid-column(12);
           text-align: center;
@@ -83,6 +83,8 @@ nav {
         }
         margin-bottom: 400px;
         margin-top: 40px;
+        position: relative;
+
 
 
         h1 {
@@ -99,6 +101,24 @@ nav {
           font-size: 0.9em;
           color: #707071;
         }
+
+        #carousel-intro  {
+          .carousel-inner .item {
+            padding-bottom: 80px;
+          }
+          .carousel-control.left, .carousel-control.right {
+            background-image: none;
+          }
+          .carousel-indicators {
+            li {
+              background-color: #cecece;
+            }
+            li.active {
+              background-color: #0b4e70;
+            }
+          }
+        }
+
       }
     }
   }
@@ -175,7 +195,7 @@ nav {
       background-size: 300px;
       background-repeat: no-repeat;
       background-position: 100% 280px;
-      #introContainer #intro {
+      #introContainer .intro {
         h1 {
           font-size: 2.2em;
         }
@@ -216,13 +236,18 @@ nav {
   }
 }
 
+
+
+
+
+
 @media (min-width: $tablet-size) {
   #headerServiceWrapper {
     header {
       background-size: 400px;
       background-repeat: no-repeat;
       background-position: 100% 82%;
-      #introContainer #intro {
+      #introContainer .intro {
         h1 {
           font-size: 2.5em;
         }
@@ -269,7 +294,7 @@ nav {
       background-size: 600px;
       background-repeat: no-repeat;
       background-position: right bottom;
-      #introContainer #intro {
+      #introContainer .intro {
         h1 {
           font-size: 2.5em;
         }

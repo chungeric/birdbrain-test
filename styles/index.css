@@ -61,39 +61,48 @@ nav {
           width: calc(100% - 28%);
           float: left;
           margin-left: 14%; } }
-      #headerServiceWrapper header #introContainer #intro {
+      #headerServiceWrapper header #introContainer .intro {
         margin-bottom: 400px;
-        margin-top: 40px; }
+        margin-top: 40px;
+        position: relative; }
         @media only screen and (min-width: 320px) {
-          #headerServiceWrapper header #introContainer #intro {
+          #headerServiceWrapper header #introContainer .intro {
             width: calc(100% - 40px);
             float: left;
             margin-left: 20px;
             text-align: center; } }
         @media only screen and (min-width: 641px) {
-          #headerServiceWrapper header #introContainer #intro {
+          #headerServiceWrapper header #introContainer .intro {
             width: calc(100% - 100px);
             float: left;
             margin-left: 50px;
             text-align: left; } }
         @media only screen and (min-width: 1008px) {
-          #headerServiceWrapper header #introContainer #intro {
+          #headerServiceWrapper header #introContainer .intro {
             width: calc(100% - 40px);
             float: left;
             margin-left: 20px;
             text-align: left; } }
-        #headerServiceWrapper header #introContainer #intro h1 {
+        #headerServiceWrapper header #introContainer .intro h1 {
           font-weight: 300;
           letter-spacing: 2px;
           font-size: 2.5em;
           padding: 0;
           margin: 0;
           color: #212733; }
-        #headerServiceWrapper header #introContainer #intro h4 {
+        #headerServiceWrapper header #introContainer .intro h4 {
           font-weight: 400;
           letter-spacing: 1px;
           font-size: 0.9em;
           color: #707071; }
+        #headerServiceWrapper header #introContainer .intro #carousel-intro .carousel-inner .item {
+          padding-bottom: 80px; }
+        #headerServiceWrapper header #introContainer .intro #carousel-intro .carousel-control.left, #headerServiceWrapper header #introContainer .intro #carousel-intro .carousel-control.right {
+          background-image: none; }
+        #headerServiceWrapper header #introContainer .intro #carousel-intro .carousel-indicators li {
+          background-color: #cecece; }
+        #headerServiceWrapper header #introContainer .intro #carousel-intro .carousel-indicators li.active {
+          background-color: #0b4e70; }
   #headerServiceWrapper #services {
     background: #0b4e70;
     clip-path: polygon(0 0, 100% 150px, 100% 100%, 0% 100%);
@@ -162,9 +171,9 @@ nav {
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: 100% 280px; }
-    #headerServiceWrapper header #introContainer #intro h1 {
+    #headerServiceWrapper header #introContainer .intro h1 {
       font-size: 2.2em; }
-    #headerServiceWrapper header #introContainer #intro h4 {
+    #headerServiceWrapper header #introContainer .intro h4 {
       font-size: 0.8em; }
   #headerServiceWrapper #services {
     top: 350px; }
@@ -189,9 +198,9 @@ nav {
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: 100% 82%; }
-    #headerServiceWrapper header #introContainer #intro h1 {
+    #headerServiceWrapper header #introContainer .intro h1 {
       font-size: 2.5em; }
-    #headerServiceWrapper header #introContainer #intro h4 {
+    #headerServiceWrapper header #introContainer .intro h4 {
       font-size: 0.9em; }
   #headerServiceWrapper #services {
     top: 330px; }
@@ -216,9 +225,9 @@ nav {
     background-size: 600px;
     background-repeat: no-repeat;
     background-position: right bottom; }
-    #headerServiceWrapper header #introContainer #intro h1 {
+    #headerServiceWrapper header #introContainer .intro h1 {
       font-size: 2.5em; }
-    #headerServiceWrapper header #introContainer #intro h4 {
+    #headerServiceWrapper header #introContainer .intro h4 {
       font-size: 0.9em; }
   #headerServiceWrapper #services {
     top: 330px; }
